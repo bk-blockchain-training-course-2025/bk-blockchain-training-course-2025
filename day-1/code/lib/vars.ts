@@ -14,7 +14,7 @@ export const payer = process.env?.LOCAL_PAYER_JSON_ABSPATH
   : loadOrGenerateKeypair("payer");
 
 // generate a new Keypair for testing, named `wallet`
-export const testWallet = loadOrGenerateKeypair("testWallet");
+export const testWallet = loadOrGenerateKeypair("wallet-keypair");
 
 // load the env variables and store the cluster RPC url
 export const CLUSTER_URL = process.env.RPC_URL ?? clusterApiUrl("devnet");
