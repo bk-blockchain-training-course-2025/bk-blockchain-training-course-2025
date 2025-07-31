@@ -1,6 +1,6 @@
 import { AnchorProvider, IdlAccounts, Program, utils } from "@coral-xyz/anchor";
-import TodoAppIdl from "../../../target/idl/todo_app.json";
-import { TodoApp } from "../../../target/types/todo_app";
+import TodoAppIdl from "./program/todo_app.json";
+import { TodoApp } from "./program/todo_app";
 import { Cluster, PublicKey, SystemProgram } from "@solana/web3.js";
 
 export default class TodoProgram {

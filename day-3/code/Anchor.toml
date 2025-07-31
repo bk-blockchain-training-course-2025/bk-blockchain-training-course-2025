@@ -15,5 +15,5 @@ cluster = "devnet"
 wallet = "/Users/trankhacvy/.config/solana/id.json"
 
 [scripts]
-# test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/create-profile.ts"
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/create-profile.ts"
 # test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/create-todo.ts"

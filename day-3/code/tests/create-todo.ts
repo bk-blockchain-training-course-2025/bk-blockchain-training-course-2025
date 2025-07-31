@@ -23,7 +23,7 @@ describe("todo-app", () => {
 
     const tx = await program.methods
       .createProfile(name)
-      .accounts({
+      .accountsPartial({
         creator: provider.publicKey,
         profile,
         systemProgram: anchor.web3.SystemProgram.programId,
@@ -44,7 +44,7 @@ describe("todo-app", () => {
 
     const tx = await program.methods
       .createTodo(content)
-      .accounts({
+      .accountsPartial({
         creator: provider.publicKey,
         profile,
         todo,
@@ -84,7 +84,7 @@ describe("todo-app", () => {
 
         const tx = await program.methods
           .createTodo(longContent)
-          .accounts({
+          .accountsPartial({
             creator: provider.publicKey,
             profile,
             todo,
@@ -143,7 +143,7 @@ describe("todo-app", () => {
 
         const tx = await program.methods
           .createTodo(content)
-          .accounts({
+          .accountsPartial({
             creator: anotherPayer.publicKey,
             profile,
             todo,

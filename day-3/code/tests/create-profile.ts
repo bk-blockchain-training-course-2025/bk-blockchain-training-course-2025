@@ -19,7 +19,7 @@ describe("todo-app", () => {
 
     const tx = await program.methods
       .createProfile(name)
-      .accounts({
+      .accountsPartial({
         creator: provider.publicKey,
         profile,
         systemProgram: anchor.web3.SystemProgram.programId,
@@ -50,7 +50,7 @@ describe("todo-app", () => {
           .createProfile(
             "a very long name a very long name a very long name a very long name a very long name a very long name a very long name a very long name a very long name"
           )
-          .accounts({
+          .accountsPartial({
             creator: provider.publicKey,
             profile,
             systemProgram: anchor.web3.SystemProgram.programId,
