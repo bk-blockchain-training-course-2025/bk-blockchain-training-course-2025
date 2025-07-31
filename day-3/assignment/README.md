@@ -1,6 +1,6 @@
 # Assignment 3 - Write your first program
 
-[Assignment 3](https://classroom.github.com/a/rVCWRfbd)
+[Assignment 3](https://classroom.github.com/a/Y6OfUe4m)
 
 ## Requirements
 
